@@ -22,5 +22,8 @@ jobs:
       - name: 📦 Installer les dépendances
         run: npm install
 
+      - name: 🧱 Télécharger le binaire Cypress
+        run: npx cypress install
+
       - name: 🚀 Lancer les tests Cypress
         run: npx cypress run
